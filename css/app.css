@@ -154,15 +154,15 @@ img {
     
 }
 
-.modelo__precio {
+.modelo__precio {    
     color: var(--primary);
     font-size: 6rem;
     font-weight: 900;
-    line-height: 0;
-    
+    line-height: 0;   
+    margin: 5rem 0; 
 }
 
-.modelo__enlace {
+.modelo__enlace {    
     border-radius: 2rem;
     border: 2px solid var(--primary);
     color: var(--blanco);
@@ -221,13 +221,18 @@ img {
     margin: 0;
 }
 
+.producto__sku {
+    font-size: 1rem;
+    text-align: right;
+}
+
 .producto__enlace {
     border-radius: 2rem;
     margin: 2rem 0;
     display: inline-block;
     text-decoration: none;
     color: var(--negro);
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     border: 1px solid var(--primary);
     font-size: 1rem;
     font-weight: 900;
@@ -443,7 +448,7 @@ img {
 
 .producto__cantidad {
     border: 2px solid var(--primary);
-    padding: 1rem;
+    /* padding: 1rem; */
     text-align: center;
 }
 .producto__cantidad:focus-visible {
@@ -457,9 +462,9 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     border: nonve;
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
     color: var(--blanco);
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 700;
     transition-property: background-color;
     transition-duration: .3s;
@@ -468,4 +473,62 @@ img {
 .producto__agregar-carrito:hover {
     background-color: var(--negro);
     cursor: pointer;
+}
+
+.borrar-producto{
+    /* background-color: crimson; */
+    /* border-radius: 50%; */
+    padding: 1rem;
+    text-decoration: none;
+}
+.whatsapp {    
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    border-radius: 50%;
+    display: block;
+    height: 100px;
+    width: 40px;
+}
+
+.submenu {
+    position: relative;    
+}
+.submenu img {
+    width: 7rem;
+}
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    /* right: 0; */
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: var(--blanco);
+    padding: 2rem;
+    min-height: 40rem;
+    min-width: 30rem;
+    font-size: 1rem;
+}
+
+@media (min-width:768px) {
+    .submenu:hover #carrito {
+        font-size: 1.4rem;        
+    }
+}
+
+
+.vacio {
+    padding: 1rem;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--blanco);
+    font-size: 1rem;
+
 }
